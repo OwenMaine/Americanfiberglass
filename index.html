@@ -1,1 +1,334 @@
 
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Fiberglass Corporation - Manufacturing Excellence</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'pitch': '#1a1a1a', // A deep black/charcoal
+                        'silver': '#c0c0c0', // Classic silver
+                        'glass': '#e0f2f1', // A very light, seafoam/glass color
+                        'violet': '#8b5cf6', // A vibrant violet
+                        'wine-red': '#9f1239', // A deep wine red
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* A subtle glass-like overlay for the hero */
+        .hero-overlay {
+            background-color: rgba(26, 26, 26, 0.6); /* Pitch with 60% opacity */
+        }
+
+        /* Styling for the Anime.js hero title */
+        .hero-title-letter {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+
+    <nav class="bg-white/90 sticky top-0 z-50 backdrop-blur-md shadow-sm wow animate__animated animate__fadeInDown">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-pitch">
+                    <i class="fa-solid fa-layer-group text-violet"></i>
+                    <span>American Fiberglass</span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="index.html" class="text-pitch font-semibold border-b-2 border-violet">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-violet transition duration-300">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-violet transition duration-300">Services</a>
+                    <a href="industries.html" class="text-gray-600 hover:text-violet transition duration-300">Industries</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-violet transition duration-300">Contact</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-2 text-wine-red font-medium">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>941-229-6857</span>
+                </div>
+                
+                <div class="md:hidden">
+                    <button class="text-pitch">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="images/1.jpg" alt="Fiberglass manufacturing process" class="w-full h-full object-cover">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="relative z-10 text-center p-6">
+            <h1 id="hero-title" class="text-5xl md:text-7xl font-extrabold mb-4">
+                Excellence in Fiberglass
+            </h1>
+            <p id="hero-subtitle" class="text-xl md:text-2xl text-silver mb-8 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+                Your trusted partner for high-quality, durable composite solutions.
+            </p>
+            <div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.8s">
+                <a href="services.html" class="bg-violet text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-opacity-90 transition duration-300 shadow-lg">
+                    Explore Our Services
+                </a>
+                <a href="contact.html" class="ml-4 border-2 border-white text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-white hover:text-pitch transition duration-300 shadow-lg">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 bg-glass">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-pitch mb-4 wow animate__animated animate__fadeInUp">
+                Built on a Foundation of Quality
+            </h2>
+            <p class="text-lg text-gray-700 max-w-3xl mx-auto mb-12 wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                We specialize in the manufacturing and distribution of superior fiberglass products, driven by innovation and precision engineering.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8" id="features-grid">
+                <div class="bg-white p-8 rounded-lg shadow-md feature-item">
+                    <i class="fa-solid fa-certificate text-5xl text-wine-red mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-pitch mb-2">Unmatched Quality</h3>
+                    <p class="text-gray-600">Our products undergo rigorous testing to ensure they meet the highest industry standards.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-item">
+                    <i class="fa-solid fa-gear text-5xl text-violet mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-pitch mb-2">Custom Fabrication</h3>
+                    <p class="text-gray-600">Tailored solutions to meet your exact specifications, no matter the complexity.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-item">
+                    <i class="fa-solid fa-truck-fast text-5xl text-wine-red mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-pitch mb-2">Reliable Distribution</h3>
+                    <p class="text-gray-600">On-time delivery across the nation, ensuring your project stays on schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-pitch mb-12 wow animate__animated animate__fadeInUp">
+                Our Services
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="group rounded-lg shadow-lg overflow-hidden wow animate__animated animate__zoomIn">
+                    <img src="images/2.jpg" alt="Custom Molding" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pitch mb-2">Custom Molding</h3>
+                        <p class="text-gray-600 mb-4">From simple parts to complex assemblies, our custom molding services are second to none.</p>
+                        <a href="services.html#molding" class="font-medium text-violet hover:text-wine-red transition duration-300">Learn More &rarr;</a>
+                    </div>
+                </div>
+                <div class="group rounded-lg shadow-lg overflow-hidden wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
+                    <img src="images/3.jpg" alt="Fiberglass Distribution" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pitch mb-2">Material Distribution</h3>
+                        <p class="text-gray-600 mb-4">A vast inventory of resins, gelcoats, and reinforcement materials ready for dispatch.</p>
+                        <a href="services.html#distribution" class="font-medium text-violet hover:text-wine-red transition duration-300">Learn More &rarr;</a>
+                    </div>
+                </div>
+                <div class="group rounded-lg shadow-lg overflow-hidden wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
+                    <img src="images/4.jpg" alt="Repair and Restoration" class="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-pitch mb-2">Repair & Restoration</h3>
+                        <p class="text-gray-600 mb-4">Expert repair services for marine, automotive, and industrial fiberglass components.</p>
+                        <a href="services.html#repair" class="font-medium text-violet hover:text-wine-red transition duration-300">Learn More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-pitch text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 wow animate__animated animate__fadeInUp">
+                Serving Diverse Industries
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 text-center" id="industries-grid">
+                <div class="industry-item p-4 wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
+                    <i class="fa-solid fa-ship text-5xl text-violet mb-4"></i>
+                    <h4 class="text-xl font-semibold text-silver">Marine</h4>
+                </div>
+                <div class="industry-item p-4 wow animate__animated animate__fadeIn" data-wow-delay="0.2s">
+                    <i class="fa-solid fa-car text-5xl text-violet mb-4"></i>
+                    <h4 class="text-xl font-semibold text-silver">Automotive</h4>
+                </div>
+                <div class="industry-item p-4 wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
+                    <i class="fa-solid fa-building text-5xl text-violet mb-4"></i>
+                    <h4 class="text-xl font-semibold text-silver">Construction</h4>
+                </div>
+                <div class="industry-item p-4 wow animate__animated animate__fadeIn" data-wow-delay="0.4s">
+                    <i class="fa-solid fa-plane text-5xl text-violet mb-4"></i>
+                    <h4 class="text-xl font-semibold text-silver">Aerospace</h4>
+                </div>
+                <div class="industry-item p-4 col-span-2 md:col-span-1 wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
+                    <i class="fa-solid fa-bolt text-5xl text-violet mb-4"></i>
+                    <h4 class="text-xl font-semibold text-silver">Energy</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-wine-red text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 id="cta-title" class="text-4xl font-extrabold mb-4">Ready to Start Your Project?</h2>
+            <p class="text-xl text-silver mb-8 max-w-2xl mx-auto">
+                Let our experts help you find the perfect fiberglass solution. Contact us today for a free consultation and quote.
+            </p>
+            <a href="contact.html" class="bg-white text-pitch font-bold py-4 px-10 rounded-lg text-lg hover:bg-glass transition duration-300 shadow-xl">
+                Contact Us Now
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-pitch text-silver pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-white mb-4">
+                        <i class="fa-solid fa-layer-group text-violet"></i>
+                        <span>American Fiberglass</span>
+                    </a>
+                    <p class="text-gray-400 mb-4">
+                        Manufacturing and distribution of high-quality fiberglass products.
+                    </p>
+                    <p class="text-gray-400">
+                        5916 Sandphil Rd,<br>
+                        Sarasota, FL 34232
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-violet transition duration-300">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-violet transition duration-300">Services</a></li>
+                        <li><a href="industries.html" class="hover:text-violet transition duration-300">Industries Served</a></li>
+                        <li><a href="contact.html" class="hover:text-violet transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Core Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#molding" class="hover:text-violet transition duration-300">Custom Molding</a></li>
+                        <li><a href="services.html#distribution" class="hover:text-violet transition duration-300">Distribution</a></li>
+                        <li><a href="services.html#repair" class="hover:text-violet transition duration-300">Repair & Restoration</a></li>
+                        <li><a href="services.html#fabrication" class="hover:text-violet transition duration-300">Fabrication</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Get In Touch</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-phone text-violet"></i>
+                            <a href="tel:941-229-6857" class="hover:text-violet">941-229-6857</a>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-envelope text-violet"></i>
+                            <a href="mailto:Support@amerifiberglass.com" class="hover:text-violet">Support@amerifiberglass.com</a>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-silver hover:text-violet transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-silver hover:text-violet transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                        <a href="#" class="text-silver hover:text-violet transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="border-gray-700">
+            
+            <div class="text-center text-gray-500 pt-8">
+                &copy; <span id="current-year"></span> American Fiberglass Corporation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            
+            // 1. Initialize WOW.js (for simple reveals)
+            new WOW().init();
+
+            // 2. Initialize ScrollReveal.js (for staggered reveals)
+            const sr = ScrollReveal({
+                distance: '50px',
+                duration: 1000,
+                easing: 'ease-in-out',
+                reset: false // Only animate once
+            });
+
+            // Staggered animation for the feature grid
+            sr.reveal('.feature-item', {
+                interval: 200,
+                origin: 'bottom'
+            });
+
+            // Staggered animation for industries
+            sr.reveal('.industry-item', {
+                interval: 150,
+                origin: 'top',
+                scale: 0.9
+            });
+
+            // 3. Initialize Anime.js (for unique, complex animations)
+            
+            // Hero Title Letter Animation
+            const heroTitle = document.getElementById('hero-title');
+            heroTitle.innerHTML = heroTitle.textContent.replace(/\S/g, "<span class='hero-title-letter'>$&</span>");
+            
+            anime.timeline({
+                targets: '.hero-title-letter'
+            })
+            .add({
+                translateY: [20, 0],
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: anime.stagger(100) // 100ms delay between each letter
+            });
+
+            // Pulsing animation for the CTA title
+            anime({
+                targets: '#cta-title',
+                scale: [1, 1.03, 1],
+                loop: true,
+                duration: 3000,
+                easing: 'easeInOutSine',
+                delay: 1000
+            });
+
+            // 4. Set Current Year in Footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
